@@ -19,3 +19,7 @@ export interface SalesData {
   units: number;
   timestamp: string;
 }
+export interface DataPoint {
+  name: string;
+  value: number;
+}
