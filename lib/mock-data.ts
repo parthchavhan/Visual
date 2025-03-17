@@ -1,4 +1,10 @@
-import { DataPoint, SalesData } from './types';
+import { SalesData } from './types';
+
+interface DataPoint {
+  name: string;
+  value: number;
+  category: string;
+}
 
 export function generateRandomData(): DataPoint[] {
   const categories = ['Electronics', 'Clothing', 'Food', 'Books', 'Sports'];

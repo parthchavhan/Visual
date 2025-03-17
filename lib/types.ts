@@ -13,3 +13,9 @@ export interface ChartConfig {
   yAxis: string;
   title: string;
 }
+export interface SalesData {
+  product: string;
+  revenue: number;
+  units: number;
+  timestamp: string;
+}
