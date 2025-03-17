@@ -61,7 +61,7 @@ export function ImportData({ onDataImport }: ImportDataProps) {
         const jsonData = XLSX.utils.sheet_to_json(worksheet);
         
         if (jsonData.length > 0) {
-          const headers = Object.keys(jsonData[0]);
+          const headers = Object.keys(jsonData[0] as object);
           onDataImport(processData(headers, jsonData));
         }
       }
